@@ -1,0 +1,46 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DecisaoEncadeada {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Solicitar as faltas
+		 * Para que o aluno esteja aprovado, a qtde de faltas menor que 20 e a nota >= 6
+		 * (Vale para o exame tb)
+		 */
+
+		String aluno = JOptionPane.showInputDialog("Aluno: ");
+		String disciplina = JOptionPane.showInputDialog("Disciplina: ").toUpperCase();
+		float nota1 = Float.parseFloat(JOptionPane.showInputDialog("Qual o nota um: "));
+		float nota2 = Float.parseFloat(JOptionPane.showInputDialog("Qual o nota dois: "));
+		float media = (nota1+nota2)/2;
+		int faltas = Integer.parseInt(JOptionPane.showInputDialog("Qual a quantidade de faltas: "));
+		
+		if (faltas>20 || media<4 ) {
+			System.out.println("Voce foi reprovado na disciplina:  " + disciplina);
+		}
+		
+		if(media>=6) {
+			System.out.println("Voce foi aprovado na discplina :  " + disciplina);
+		}
+		
+		else {
+			System.out.println("Voce foi tem chance no exame em:  " + disciplina);
+		}
+	
+	
+			
+		System.out.println(" Nome do Aluno.......: " + aluno);
+		System.out.println(" Disciplina   .......: " + disciplina);
+		System.out.println(" Media das notas.......: " + media);
+		}
+	
+}
+
+
+
+
+
