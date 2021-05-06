@@ -16,7 +16,7 @@ public class TiposPrimitivos {
 		 * int = - 2 trilhões / + 2 trilhões
 		 * long = 9 quintilhões
 		 * float 
-		 * double = possui o dobro de precição em relação ao float.
+		 * double = possui o dobro de precisão em relação ao float.
 		 *  
 		 *  
 		 *  Classes Wrapers ( classes que servem para apoiar os tipos primitivos
